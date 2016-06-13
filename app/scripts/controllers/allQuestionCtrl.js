@@ -1,6 +1,7 @@
 'use strict'
 
 angular.module('medicalApp')
-	.controller('allQUestionCtrl', ['$scope', function($scope){
-		console.log('dziala all');
+	.controller('allQuestionCtrl', ['$scope', function($scope){
+		console.log("allQuestionCtrl work");
+		$scope.allquestion = true;
 	}]);

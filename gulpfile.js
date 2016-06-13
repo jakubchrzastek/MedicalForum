@@ -50,7 +50,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./app/sass/main.sass', ['sass']);
+    gulp.watch('./app/sass/*.sass', ['sass']);
     gulp.watch('./app/jade/*.jade', ['jade']);
     gulp.watch('./app/css/main.css', ['css']);
     gulp.watch('./app/index.html', ['html']);

@@ -4,7 +4,7 @@ angular.module('medicalApp', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('allquestion', {
-                url: '/allquestion',
+                url: '/',
                 templateUrl: 'html/allquestion.html',
                 controller: 'allQuestionCtrl'
             })
@@ -14,6 +14,6 @@ angular.module('medicalApp', ['ui.router'])
             	controller: 'singleQuestionCtrl'
             });
 
-        $urlRouterProvider.otherwise('/allquestion');
+        $urlRouterProvider.otherwise('/');
     });
 

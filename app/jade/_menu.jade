@@ -1,0 +1,18 @@
+nav.navigation
+	.row
+		i(class="fa fa-angle-left fa-3x" ng-click='goBack()')
+		p Question
+		i(class="fa fa-plus-circle fa-2x")
+		.navigation--searchbutton
+			input(type="radio") 
+			span| My shelf
+			input(type="radio") 
+			span| All questions
+		.navigation--sort
+			| Sort by: 
+			span.none recent 
+			| or 
+			span.active hot
+		.navigation--searchinput
+			.row
+				input(type='text', placeholder='Search question')
