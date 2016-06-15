@@ -6,8 +6,5 @@ angular.module('medicalApp')
             $scope.allQuestionData = response.question;
             console.log($scope.allQuestionData);
         });
-
         $scope.limit = 2;
-        $scope.toggle = true;
-
     }]);

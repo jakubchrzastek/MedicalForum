@@ -8,7 +8,6 @@ angular.module('medicalApp')
             templateUrl: 'html/_menu.html',
             link: function($scope, $element, $attrs) {
                 $scope.type = $attrs.type;
-
                 $scope.goBack = function() {
                     window.history.back();
                 };

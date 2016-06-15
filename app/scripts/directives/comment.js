@@ -7,7 +7,7 @@ angular.module('medicalApp')
             replace: true,
             templateUrl: 'html/_comment.html',
             link: function($scope, $element, $attrs) {
-                
+
             }
         }
     }]);

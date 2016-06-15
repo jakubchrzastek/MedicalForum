@@ -8,9 +8,8 @@ menu(type="singleQuestion")
 				span  IS ASKING:
 			.comment__header__title
 				p {{item.title}}
-		.comment__header__side
-			.comment__header__side__switch
-				span(ng-click="toggle = !toggle"){{ toggle ? 'follow' : 'unfollow' }}
+	.comment__switch
+		span(ng-click="toggle = !toggle") {{ toggle ? 'follow' : 'unfollow' }}
 	.comment__button
 		span GIVE new answer
 	.response

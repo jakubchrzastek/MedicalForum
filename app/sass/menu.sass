@@ -18,6 +18,9 @@
 			size: 30px
 			weight: 600
 		text-transform: uppercase
+		@media(max-width: 760px)
+			font-size: 40px
+			margin-left: 20px
 	i
 		margin-top: 5px
 		padding-left: 15px
@@ -30,11 +33,15 @@
 			line-height: 50px
 			margin-left: 40px
 			&:hover
-				cursor: pointer
-				
+				cursor: pointer	
+			@media(max-width: 760px)
+				margin-left: 0px
 		&:nth-child(3)
 			color: #0258a0
 			margin-top: 10px
+			@media(max-width: 760px)
+				font-size: 43px
+				margin-left: auto
 	
 	.navigation__postdate
 		display: inline-block
@@ -44,6 +51,8 @@
 			style: italic
 		span
 			display: inline-block
+		@media(max-width: 760px)
+			display: none
 
 	.navigation__searchbutton
 		padding-top: 20px
@@ -51,16 +60,19 @@
 		margin-left: auto
 		font:
 			weight: 600
-
 		span
 			margin-right: 20px
+		@media(max-width: 760px)
+			margin: 0 auto
 	
 	.navigation__sort
 		padding-top: 20px
 		display: inline-block
 		font:
 			style: italic
-
+		@media(max-width: 760px)
+			margin: 0 auto
+		
 		.active
 			color: #0258a0
 			cursor: pointer
@@ -70,11 +82,12 @@
 			color: #bbbbbb
 			text-decoration: underline
 			cursor: pointer
-
-
+			
 	.navigation__searchinput
 		margin-left: 140px
 		color: darken(#dddddd,30%)
+		@media(max-width: 760px)
+			margin: 30px
 		span
 			font:
 				size: 11px
@@ -84,3 +97,8 @@
 			margin-left: 20px
 			margin-top: 0px
 			display: inline-block
+			@media(max-width: 620px)
+				left: 90px
+				display: inline-block
+			@media(max-width: 760px)
+				margin-left: 60px

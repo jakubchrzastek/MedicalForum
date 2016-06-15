@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin,latin-ext);
+@import "https://fonts.googleapis.com/css?family=Arima+Madurai|Lato";
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.3
@@ -3818,6 +3818,10 @@ table.hover tr:nth-of-type(even):hover {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase; }
+    @media (max-width: 760px) {
+      .navigation p {
+        font-size: 40px;
+        margin-left: 20px; } }
   .navigation i {
     margin-top: 5px;
     padding-left: 15px; }
@@ -3831,9 +3835,16 @@ table.hover tr:nth-of-type(even):hover {
       margin-left: 40px; }
       .navigation i:nth-child(1):hover {
         cursor: pointer; }
+      @media (max-width: 760px) {
+        .navigation i:nth-child(1) {
+          margin-left: 0px; } }
     .navigation i:nth-child(3) {
       color: #0258a0;
       margin-top: 10px; }
+      @media (max-width: 760px) {
+        .navigation i:nth-child(3) {
+          font-size: 43px;
+          margin-left: auto; } }
   .navigation .navigation__postdate {
     display: inline-block;
     margin-left: auto;
@@ -3841,6 +3852,9 @@ table.hover tr:nth-of-type(even):hover {
     font-style: italic; }
     .navigation .navigation__postdate span {
       display: inline-block; }
+    @media (max-width: 760px) {
+      .navigation .navigation__postdate {
+        display: none; } }
   .navigation .navigation__searchbutton {
     padding-top: 20px;
     display: inline-block;
@@ -3848,10 +3862,16 @@ table.hover tr:nth-of-type(even):hover {
     font-weight: 600; }
     .navigation .navigation__searchbutton span {
       margin-right: 20px; }
+    @media (max-width: 760px) {
+      .navigation .navigation__searchbutton {
+        margin: 0 auto; } }
   .navigation .navigation__sort {
     padding-top: 20px;
     display: inline-block;
     font-style: italic; }
+    @media (max-width: 760px) {
+      .navigation .navigation__sort {
+        margin: 0 auto; } }
     .navigation .navigation__sort .active {
       color: #0258a0;
       cursor: pointer;
@@ -3863,6 +3883,9 @@ table.hover tr:nth-of-type(even):hover {
   .navigation .navigation__searchinput {
     margin-left: 140px;
     color: #919191; }
+    @media (max-width: 760px) {
+      .navigation .navigation__searchinput {
+        margin: 30px; } }
     .navigation .navigation__searchinput span {
       font-size: 11px;
       font-weight: 600;
@@ -3871,6 +3894,13 @@ table.hover tr:nth-of-type(even):hover {
       margin-left: 20px;
       margin-top: 0px;
       display: inline-block; }
+      @media (max-width: 620px) {
+        .navigation .navigation__searchinput span {
+          left: 90px;
+          display: inline-block; } }
+      @media (max-width: 760px) {
+        .navigation .navigation__searchinput span {
+          margin-left: 60px; } }
 
 .comment {
   max-width: 1000px;
@@ -3887,6 +3917,9 @@ table.hover tr:nth-of-type(even):hover {
           flex-direction: column;
   position: relative;
   margin-bottom: 10px; }
+  @media (max-width: 1000px) {
+    .comment {
+      margin: 10px 10px; } }
   .comment .comment__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3912,7 +3945,8 @@ table.hover tr:nth-of-type(even):hover {
     .comment .comment__header .comment__header__title p {
       font-weight: 600;
       font-style: italic;
-      color: #096a9d; }
+      color: #096a9d;
+      font-family: 'Arima Madurai', cursive; }
     .comment .comment__header .comment__header__title:hover {
       cursor: pointer; }
   .comment .comment__button {
@@ -3927,27 +3961,20 @@ table.hover tr:nth-of-type(even):hover {
     background: #ffffff;
     color: #818181;
     padding: 5px 20px; }
-  .comment .comment__header__side {
+  .comment .comment__switch {
+    font-weight: 600;
+    color: #096a9d;
     position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    right: 0;
-    top: 0; }
-    .comment .comment__header__side .comment__header__side__switch {
-      margin-top: 50px;
-      margin-right: 50px;
-      font-weight: 600;
-      color: #096a9d; }
-      .comment .comment__header__side .comment__header__side__switch:hover {
-        cursor: pointer; }
+    top: 30px;
+    right: 30px;
+    text-align: center; }
+    .comment .comment__switch:hover {
+      cursor: pointer; }
+    @media (max-width: 460px) {
+      .comment .comment__switch {
+        left: -70%;
+        top: 90%;
+        bottom: -15px; } }
   .comment .response {
     background: #ffffff;
     width: calc(100% - 100px);
@@ -3963,8 +3990,8 @@ table.hover tr:nth-of-type(even):hover {
     .comment .response .response__dialog {
       padding: 50px; }
     .comment .response .response__left {
-      margin: 50px 20px 0 20px;
-      width: 80px;
+      margin: 50px 0px 0px 20px;
+      min-width: 120px;
       background: #ffffff;
       text-align: center;
       padding: 10px;
@@ -3980,9 +4007,26 @@ table.hover tr:nth-of-type(even):hover {
         left: 0;
         font-style: italic;
         color: #9a9a9a; }
+      .comment .response .response__left .response__left__dot {
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #818181;
+        border-radius: 50%;
+        bottom: -5px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+      @media (max-width: 600px) {
+        .comment .response .response__left {
+          background: #b3b3b3; }
+          .comment .response .response__left span {
+            color: #000000; } }
     .comment .response .response__cards {
       margin: 50px 20px 0 20px;
-      max-width: 120px;
+      min-width: 120px;
       background: #eeeeee;
       text-align: center;
       padding: 10px 15px;
@@ -3990,7 +4034,7 @@ table.hover tr:nth-of-type(even):hover {
       position: relative;
       color: #9a9a9a; }
       .comment .response .response__cards p {
-        font-size: 12px; }
+        font-size: 16px; }
       .comment .response .response__cards img {
         margin-top: 10px;
         width: 80px;
@@ -4124,6 +4168,9 @@ table.hover tr:nth-of-type(even):hover {
               align-items: center;
       position: relative;
       background: #ffffff; }
+      @media (max-width: 600px) {
+        .info .answer .answer_subitem {
+          width: calc(100% - 24px); } }
       .info .answer .answer_subitem .answer__subitem__photo {
         border-right: 1px solid #cfcfcf;
         -webkit-box-orient: vertical;
@@ -4177,13 +4224,22 @@ table.hover tr:nth-of-type(even):hover {
         text-align: center;
         background: #ffffff;
         color: #818181;
-        padding: 5px 20px; }
+        padding: 5px 10px; }
+        @media (max-width: 400px) {
+          .info .answer .answer_subitem .answer_subitem__button {
+            padding: 5px 10px; } }
 
 .comment--first {
   margin-top: 130px; }
+  @media (max-width: 900px) {
+    .comment--first {
+      margin-top: 170px; } }
 
 .comment--fix {
   margin-top: 70px; }
+  @media (max-width: 760px) {
+    .comment--fix {
+      margin-top: 90px; } }
 
 .loadmore {
   font-weight: 600;
