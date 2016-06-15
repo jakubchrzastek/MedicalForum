@@ -3,20 +3,20 @@ nav.navigation
 		i(class="fa fa-angle-left fa-3x" ng-click='goBack()')
 		p Questions
 		i(class="fa fa-plus-circle fa-2x")
-		.navigation--postdate(ng-if="type == 'singleQuestion' ")
+		.navigation__postdate(ng-if="type == 'singleQuestion' ")
 			| Last time discussed 
 			span 2003-12-21 21:11
-		.navigation--searchbutton(ng-if="type == 'allQuestion' ")
+		.navigation__searchbutton(ng-if="type == 'allQuestion' ")
 			input(type="radio") 
 			span| My shelf
 			input(type="radio") 
 			span| All questions
-		.navigation--sort(ng-if="type == 'allQuestion' ")
+		.navigation__sort(ng-if="type == 'allQuestion' ")
 			| Sort by: 
 			span.none recent 
 			| or 
 			span.active hot
 		.medium-12.columns.row
-			.navigation--searchinput.navigation--space(ng-if="type == 'allQuestion' ")
-				input(type='text', placeholder='Search question' class="medium-9 columns") 
+			.navigation__searchinput.navigation--space(ng-if="type == 'allQuestion' ")
+				input(type='text' placeholder='Search question' class="medium-9 columns") 
 				span SEARCH

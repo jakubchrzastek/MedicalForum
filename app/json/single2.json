@@ -1,0 +1,29 @@
+{
+    "question": [{
+        "id": "2",
+        "image": "image/doctor3.jpg",
+        "date": "2016-12-24 12:00",
+        "title": "Vegan diet in diabetes treatment?",
+        "author": "Joseph",
+        "text": "Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur animi earum blanditiis. quibusdam ipsa!",
+        "stats": {
+            "related_discussion": "1",
+            "peers_involved": "6",
+            "conversations": "3"
+        },
+         "comments": {
+            "name": "Anthony",
+            "image": "image/doctor3.jpg",
+            "content": "Lorem ipsum..",
+            "date": "yesterday"
+        },
+         "subcomments": {
+            "name": "Eva",
+            "image": "image/doctor2.jpg",
+            "content": "Lorem ipsum dolor sit ipsum dolor sit amet, consectetur adipisicing elit. Iure, sed.!",
+            "date": "yesterday"
+        }
+
+    }]
+
+}

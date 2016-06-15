@@ -1,30 +1,92 @@
-[{
-    id: 0,
-    question: "Will insulin make my patient gain weight?",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quasi dignissimos, pariatur, sapiente neque blanditiis temporibus veniam quae unde voluptate corporis aliquid ipsa suscipit similique fuga veritatis doloribus autem perferendis laboriosam nulla eaque dolorem. Iure expedita ut odit, dolorem hic iste sed inventore quasi adipisci, non nobis voluptatibus voluptatem earum?",
-    author: Eva,
-    stats: {
-        discussion: 1,
-        involved: 3,
-        conversation: 3
-    },
-      id: 1,
-    question: "Vegan diet to stop diabetes progress?",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quasi dignissimos, pariatur, sapiente neque blanditiis temporibus veniam quae unde voluptate corporis aliquid ipsa suscipit similique fuga veritatis doloribus autem perferendis laboriosam nulla eaque dolorem. Iure expedita ut odit, dolorem hic iste sed inventore quasi adipisci, non nobis voluptatibus voluptatem earum?",
-    author: Andrew,
-    stats: {
-        discussion: 2,
-        involved: 9,
-        conversation: 5
-    },
-      id: 0,
-    question: "Will insulin make my patient gain weight?",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quasi dignissimos, pariatur, sapiente neque blanditiis temporibus veniam quae unde voluptate corporis aliquid ipsa suscipit similique fuga veritatis doloribus autem perferendis laboriosam nulla eaque dolorem. Iure expedita ut odit, dolorem hic iste sed inventore quasi adipisci, non nobis voluptatibus voluptatem earum?",
-    author: Joseph,
-    stats: {
-        discussion: 5,
-        involved: 4,
-        conversation: 8
-    },
+{
+    "question": [{
+        "id": "1",
+        "image": "image/doctor2.jpg",
+        "title": "Will insuline make my patient weight?",
+        "author": "Eva",
+        "stats": {
+            "related_discussion": "1",
+            "peers_involved": "6",
+            "conversations": "3"
+        },
 
-}]
+        "response": [{
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 1,
+                "image": "image/doctor1.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 4,
+                "image": "image/doctor4.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 3,
+                "image": "image/doctor3.jpg"
+            }
+        }],
+        "comments": [{
+            "doctor": {
+                "name": "Anthony",
+                "image": "image/doctor3.jpg",
+                "content": "Lorem ipsum dolor sit amet.",
+                "date": "yesterday"
+            }
+        }]
+
+    }, {
+        "id": "2",
+        "image": "image/doctor3.jpg",
+        "title": "Vegan diet in diabetes treatment?",
+        "author": "Joseph",
+        "stats": {
+            "related_discussion": "2",
+            "peers_involved": "9",
+            "conversations": "5"
+        },
+
+        "response": [{
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 1,
+                "image": "image/doctor1.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 2,
+                "image": "image/doctor2.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 3,
+                "image": "image/doctor3.jpg"
+            }
+        }]
+
+    }, {
+        "id": "3",
+        "image": "image/doctor4.jpg",
+        "title": "Vegan diet to stop diabeten progress",
+        "author": "Andrew",
+        "stats": {
+            "related_discussion": "5",
+            "peers_involved": "4",
+            "conversations": "0"
+        },
+
+        "response": [{
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 1,
+                "image": "image/doctor3.jpg"
+            }
+        }]
+    }]
+
+}

@@ -1,24 +1,24 @@
-section.comment
+.comment(ng-repeat="item in allQuestionData | limitTo: limit as results", ng-class="{'comment--first': $first}")
 	.comment__header
-		img(src="/image/doctor3.jpg", alt="")
+		img(ng-src="{{item.image}}", alt="")
 		.comment__header__block
 			.comment__header__who
-				p Anthony 
+				p {{item.author}} 
 				span  IS ASKING:
 			.comment__header__title
-				p Will insuline make my patient get weight?
+				p(ui-sref="singlequestion({ questionID: item.id })") {{item.title}}
 	.comment__footer
 		p asked
 	.response
 		.response__left
 			p 6
 			span more activites
-		.response__cards
-			img(src="/image/doctor2.jpg", alt="")
+		.response__cards(ng-repeat="response in item.response")
+			img(ng-src="{{response.doctor.image}}", alt="")
 			.response__card__footer
-				p asked
+				p {{response.type}} 
 			.response__card__dot
 		.response__stats
-			span 9 related discussion
-			span 9 related discussion
-			span 9 related discussion
+			span {{item.stats.related_discussion}} related discusion
+			span {{item.stats.peers_involved}} peers involved
+			span {{item.stats.conversations}} conversations

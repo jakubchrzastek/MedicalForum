@@ -9,7 +9,7 @@ angular.module('medicalApp', ['ui.router'])
                 controller: 'allQuestionCtrl'
             })
             .state('singlequestion', {
-            	url: '/question',
+            	url: '/question/:questionID',
             	templateUrl: 'html/singlequestion.html',
             	controller: 'singleQuestionCtrl'
             });

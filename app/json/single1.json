@@ -1,0 +1,24 @@
+{
+    "question": [{
+        "id": "1",
+        "image": "image/doctor2.jpg",
+        "date": "2016-12-24 12:00",
+        "title": "Will insuline make my patient weight?",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deleniti dolore modi, quibusdam ipsa!",
+        "author": "Eva",
+        "comments": {
+            "name": "Anthony",
+            "image": "image/doctor3.jpg",
+            "content": "Lorem ipsum dolor sit amet.",
+            "date": "yesterday"
+        },
+         "subcomments": {
+            "name": "Eva",
+            "image": "image/doctor2.jpg",
+            "content": "Lorem ipsum dolor sitips Loremonsectetur adipisicing elit. Maxime et sunt, omnis. a!",
+            "date": "yesterday"
+        }
+
+    }]
+
+}

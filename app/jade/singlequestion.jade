@@ -1,43 +1,43 @@
 menu(type="singleQuestion")
-section.comment
+.comment.comment--fix(ng-repeat="item in questionData")
 	.comment__header
-		img(src="/image/doctor3.jpg", alt="")
+		img(ng-src="{{item.image}}", alt="")
 		.comment__header__block
 			.comment__header__who
-				p Anthony 
+				p {{item.author}} 
 				span  IS ASKING:
 			.comment__header__title
-				p Will insuline make my patient get weight?
+				p {{item.title}}
 		.comment__header__side
 			.comment__header__side__switch
-				span unfolow
+				span(ng-click="toggle = !toggle"){{ toggle ? 'follow' : 'unfollow' }}
 	.comment__button
 		span GIVE new answer
 	.response
 		.response__dialog
-			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eius adipisci assumenda? Exercitationem, quas.
+			p  {{item.text}}
 .info
-	p 4 peers already answered Anthony
+	p 2 peers already answered Anthony
 	
 	.answer
-		.answer_item
+		.answer_item(ng-repeat="item in questionData")
 			.answer__item__photo
-				img(src="/image/doctor2.jpg", alt="")
+				img(ng-src="{{item.comments.image}}", alt="")
 			.answer__item__content
-				span.content__name Patricia 
+				span.content__name {{item.comments.name}} 
 				span.content__type COMMENTED IT 
 				span.content__dote 
-				span.content__date yesterday 
+				span.content__date {{item.comments.date}}
 				br
-				span.content__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi?	
-		.answer_subitem
+				span.content__text {{item.comments.content}}
+		.answer_subitem(ng-repeat="item in questionData")
 			.answer__subitem__photo
-				img(src="/image/doctor1.jpg", alt="")
+				img(ng-src="{{item.subcomments.image}}", alt="")
 			.answer__subitem__content
-				span.subcontent__name Dawid 
+				span.subcontent__name {{item.subcomments.name}} 
 				span.subcontent__type COMMENTED IT 
 				span.subcontent__dote 
-				span.subcontent__date yesterday 
+				span.subcontent__date {{item.subcomments.date}} 
 				br
-				span.subcontent__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi?
+				span.subcontent__text {{item.subcomments.content}}
 			.answer_subitem__button CONTINUE discusion

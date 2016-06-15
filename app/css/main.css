@@ -3803,7 +3803,12 @@ table.hover tr:nth-of-type(even):hover {
           justify-content: space-between;
   background: #ffffff;
   padding: 10px 20px;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999; }
   .navigation .navigation--space {
     -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -3829,36 +3834,36 @@ table.hover tr:nth-of-type(even):hover {
     .navigation i:nth-child(3) {
       color: #0258a0;
       margin-top: 10px; }
-  .navigation .navigation--postdate {
+  .navigation .navigation__postdate {
     display: inline-block;
     margin-left: auto;
     padding-top: 10px;
     font-style: italic; }
-    .navigation .navigation--postdate span {
+    .navigation .navigation__postdate span {
       display: inline-block; }
-  .navigation .navigation--searchbutton {
+  .navigation .navigation__searchbutton {
     padding-top: 20px;
     display: inline-block;
     margin-left: auto;
     font-weight: 600; }
-    .navigation .navigation--searchbutton span {
+    .navigation .navigation__searchbutton span {
       margin-right: 20px; }
-  .navigation .navigation--sort {
+  .navigation .navigation__sort {
     padding-top: 20px;
     display: inline-block;
     font-style: italic; }
-    .navigation .navigation--sort .active {
+    .navigation .navigation__sort .active {
       color: #0258a0;
       cursor: pointer;
       font-weight: bold; }
-    .navigation .navigation--sort .none {
+    .navigation .navigation__sort .none {
       color: #bbbbbb;
       text-decoration: underline;
       cursor: pointer; }
-  .navigation .navigation--searchinput {
+  .navigation .navigation__searchinput {
     margin-left: 140px;
     color: #919191; }
-    .navigation .navigation--searchinput span {
+    .navigation .navigation__searchinput span {
       font-size: 11px;
       font-weight: 600;
       border: 1px solid #919191;
@@ -3871,7 +3876,8 @@ table.hover tr:nth-of-type(even):hover {
   max-width: 1000px;
   margin: 0 auto;
   background: #97d8f9;
-  border-right: 2px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3879,7 +3885,8 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10px; }
   .comment .comment__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3906,6 +3913,8 @@ table.hover tr:nth-of-type(even):hover {
       font-weight: 600;
       font-style: italic;
       color: #096a9d; }
+    .comment .comment__header .comment__header__title:hover {
+      cursor: pointer; }
   .comment .comment__button {
     position: absolute;
     bottom: -15px;
@@ -3937,6 +3946,8 @@ table.hover tr:nth-of-type(even):hover {
       margin-right: 50px;
       font-weight: 600;
       color: #096a9d; }
+      .comment .comment__header__side .comment__header__side__switch:hover {
+        cursor: pointer; }
   .comment .response {
     background: #ffffff;
     width: calc(100% - 100px);
@@ -3971,13 +3982,15 @@ table.hover tr:nth-of-type(even):hover {
         color: #9a9a9a; }
     .comment .response .response__cards {
       margin: 50px 20px 0 20px;
-      width: 120px;
+      max-width: 120px;
       background: #eeeeee;
       text-align: center;
-      padding: 10px;
+      padding: 10px 15px;
       height: 200px;
       position: relative;
       color: #9a9a9a; }
+      .comment .response .response__cards p {
+        font-size: 12px; }
       .comment .response .response__cards img {
         margin-top: 10px;
         width: 80px;
@@ -3999,7 +4012,7 @@ table.hover tr:nth-of-type(even):hover {
         height: 10px;
         background: #818181;
         border-radius: 50%;
-        bottom: -10px;
+        bottom: -5px;
         left: 50%;
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
@@ -4053,7 +4066,15 @@ table.hover tr:nth-of-type(even):hover {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background: #ffffff; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      background: #ffffff;
+      margin-right: auto; }
       .info .answer .answer_item .answer__item__photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -4069,11 +4090,6 @@ table.hover tr:nth-of-type(even):hover {
           width: 80px;
           height: 80px; }
       .info .answer .answer_item .answer__item__content {
-        -ms-flex-line-pack: start;
-            align-content: flex-start;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
         padding: 10px; }
         .info .answer .answer_item .answer__item__content .content__name {
           font-weight: 600;
@@ -4162,6 +4178,19 @@ table.hover tr:nth-of-type(even):hover {
         background: #ffffff;
         color: #818181;
         padding: 5px 20px; }
+
+.comment--first {
+  margin-top: 130px; }
+
+.comment--fix {
+  margin-top: 70px; }
+
+.loadmore {
+  font-weight: 600;
+  color: #fa4444;
+  margin: 30px 0; }
+  .loadmore:hover {
+    cursor: pointer; }
 
 body {
   background: #eeeeee;

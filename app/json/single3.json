@@ -1,0 +1,29 @@
+{
+    "question": [{
+        "id": "1",
+        "image": "image/doctor4.jpg",
+        "date": "2016-12-24 12:00",
+        "title": "Vegan diet to stop diabeten progress?",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deleniti dolore modi, quibusdam ipsa!",
+        "author": "Andrew",
+        "stats": {
+            "related_discussion": "1",
+            "peers_involved": "6",
+            "conversations": "3"
+        },
+         "comments": {
+            "name": "Anthony",
+            "image": "image/doctor3.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur...",
+            "date": "yesterday"
+        },
+         "subcomments": {
+            "name": "Eva",
+            "image": "image/doctor2.jpg",
+            "content": "Lorem ipsum dolor sit ipsum dolor sit amet, consectetur adipisicing elit. Iure, sed.!",
+            "date": "yesterday"
+        }
+
+    }]
+
+}
