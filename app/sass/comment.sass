@@ -1,0 +1,141 @@
+.comment
+	max-width: 1000px
+	margin: 0 auto
+	background: #97d8f9
+	border-right: 2px solid darken(#ffffff, 30%)
+	display: flex
+	flex-direction: column
+	position: relative
+	.comment__header
+		display: flex
+		.comment__header__block
+			align-self: center
+		img 
+			width: 100px
+			height: 100px
+			border-radius: 50%
+			display: inline-block
+			margin: 30px
+		.comment__header__who
+			align-self: center
+			p
+				display: inline-block
+				color: darken(#abdffa, 50%)
+			span
+				color: #fefefe
+				text-transform: uppercase
+		.comment__header__title
+			p
+				font-weight: 600
+				font-style: italic
+				color: darken(#abdffa, 50%)
+	.comment__button
+		position: absolute
+		bottom: -15px
+		left: 50%
+		transform: translateX(-50%)
+		border: 1px solid darken(#9a9a9a, 10%)
+		text-align: center
+		background: #ffffff
+		color: darken(#9a9a9a, 10%)
+		padding: 5px 40px
+	.comment__header__side	
+		position: absolute
+		flex-direction: column
+		align-items: center
+		display: flex
+		right: 0
+		top: 0
+		.comment__header__side__switch
+			margin-top: 50px
+			margin-right: 50px
+			font-weight: 600
+			color: darken(#abdffa, 50%)
+		.comment__header__side__vote
+
+	.response
+		background: #ffffff
+		width: calc(100% - 100px)
+		margin-left: auto
+		flex-direction: row
+		display: flex
+		float: right
+		.response__dialog
+			padding: 50px
+		.response__left
+			margin: 50px 20px 0 20px
+			width: 80px
+			background: #ffffff
+			text-align: center
+			padding: 10px
+			height: 200px
+			position: relative
+			p 
+				margin-top: 30px
+				font-size: 18px
+			span 
+				bottom: 10px
+				position: absolute
+				width: 100% 
+				left: 0
+				font-style: italic
+				color: #9a9a9a
+		.response__cards
+			margin: 50px 20px 0 20px
+			width: 120px
+			background: #eeeeee
+			text-align: center
+			padding: 10px
+			height: 200px
+			position: relative
+			color: #9a9a9a
+			img
+				margin-top: 10px
+				width: 80px
+				height: 80px
+				border-radius: 50%
+			.response__card__footer
+				position: absolute
+				bottom: -10px
+				left: 5px
+				text-transform: uppercase
+				border-top: 1px solid #9a9a9a
+				text-align: center
+				display: inline-block
+				width: 90%
+			.response__card__dot
+				position: absolute
+				display: block
+				width: 10px
+				height: 10px
+				background: darken(#9a9a9a, 10%)
+				border-radius: 50%
+				bottom: -10px
+				left: 50%
+				transform: translateX(-50%)
+		.response__stats
+			position: absolute
+			right: 0px
+			bottom: 0px
+			max-width: 180px
+			text-align: center
+			padding: 20px 20px 0
+			background: #ffffff
+			height: 100%
+			flex-direction: column-reverse
+			display: flex
+			span
+				margin-bottom: 45px
+			@media(max-width: 750px)
+				font-size: 14px
+				height: auto
+	.comment__footer
+		position: absolute
+		bottom: -10px
+		left: 5px
+		width: 90px
+		text-transform: uppercase
+		border-top: 1px solid #9a9a9a
+		color: #9a9a9a
+		text-align: center
+		display: inline-block

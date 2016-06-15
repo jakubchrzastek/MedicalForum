@@ -1,18 +1,22 @@
 nav.navigation
-	.row
+	.row.navigation--space
 		i(class="fa fa-angle-left fa-3x" ng-click='goBack()')
-		p Question
+		p Questions
 		i(class="fa fa-plus-circle fa-2x")
-		.navigation--searchbutton
+		.navigation--postdate(ng-if="type == 'singleQuestion' ")
+			| Last time discussed 
+			span 2003-12-21 21:11
+		.navigation--searchbutton(ng-if="type == 'allQuestion' ")
 			input(type="radio") 
 			span| My shelf
 			input(type="radio") 
 			span| All questions
-		.navigation--sort
+		.navigation--sort(ng-if="type == 'allQuestion' ")
 			| Sort by: 
 			span.none recent 
 			| or 
 			span.active hot
-		.navigation--searchinput
-			.row
-				input(type='text', placeholder='Search question')
+		.medium-12.columns.row
+			.navigation--searchinput.navigation--space(ng-if="type == 'allQuestion' ")
+				input(type='text', placeholder='Search question' class="medium-9 columns") 
+				span SEARCH

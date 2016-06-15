@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('medicalApp')
 	.controller('singleQuestionCtrl', ['$scope', function($scope){

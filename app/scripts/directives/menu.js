@@ -6,9 +6,13 @@ angular.module('medicalApp')
             restrict: 'E',
             replace: true,
             templateUrl: 'html/_menu.html',
-            scope: {
-                content: '='
+            link: function($scope, $element, $attrs) {
+                $scope.type = $attrs.type;
+
+                $scope.goBack = function() {
+                    window.history.back();
+                };
+
             }
         }
-
     }]);
