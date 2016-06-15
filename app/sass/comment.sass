@@ -38,7 +38,7 @@
 		text-align: center
 		background: #ffffff
 		color: darken(#9a9a9a, 10%)
-		padding: 5px 40px
+		padding: 5px 20px
 	.comment__header__side	
 		position: absolute
 		flex-direction: column
@@ -139,3 +139,102 @@
 		color: #9a9a9a
 		text-align: center
 		display: inline-block
+.info
+	margin-top: 60px
+	margin-bottom: 30px
+	text-align: center
+
+	.answer
+		display: inline-block
+		.answer_item
+			max-width: 900px
+			border-top: 1px solid #cfcfcf
+			border-right: 1px solid #cfcfcf
+			display: flex
+			align-items: center
+			background: #ffffff
+			.answer__item__photo
+				flex-direction: column
+				display: flex
+				padding: 20px
+				border-right: 1px solid #cfcfcf
+				img
+					border-radius: 50%
+					width: 80px
+					height: 80px
+			.answer__item__content
+				align-content: flex-start
+				justify-content: flex-start
+				padding: 10px
+				.content__name
+					font-weight: 600
+					color: darken(#abdffa, 50%)
+				.content__type
+					font-size: 12px
+					color: #9a9a9a
+				.content__dote
+					width: 5px
+					height: 5px
+					background: #9a9a9a
+					border-radius: 50%
+					display: inline-block
+					margin: 2px 5px
+				.content__date
+					font-weight: 600
+					font-style: italic
+				.content__text
+					display: flex
+
+		.answer_subitem
+			border-top: 1px solid #cfcfcf
+			border-right: 1px solid #cfcfcf
+			width: calc(100% - 120px)
+			float: right
+			display: flex
+			align-items: center
+			position: relative
+			background: #ffffff
+			.answer__subitem__photo
+				border-right: 1px solid #cfcfcf
+				flex-direction: column
+				display: flex
+				padding: 20px
+				border-right: 1px solid #cfcfcf
+				img
+					border-radius: 50%
+					width: 90px
+					height: 90px
+			.answer__subitem__content
+				align-content: flex-start
+				justify-content: flex-start
+				padding: 10px
+				.subcontent__name
+					font-weight: 600
+					color: darken(#abdffa, 50%)
+				.subcontent__type
+					font-size: 12px
+					color: #9a9a9a
+				.subcontent__dote
+					width: 5px
+					height: 5px
+					background: #9a9a9a
+					border-radius: 50%
+					display: inline-block
+					margin: 2px 5px
+				.subcontent__date
+					font-style: italic
+					font-weight: 600
+				.subcontent__text
+					display: flex
+			.answer_subitem__button
+				position: absolute
+				bottom: -18px
+				left: 50%
+				transform: translateX(-50%)
+				border: 1px solid darken(#9a9a9a, 10%)
+				text-align: center
+				background: #ffffff
+				color: darken(#9a9a9a, 10%)
+				padding: 5px 20px
+
+
