@@ -1,0 +1,170 @@
+.modal
+    display: none
+    position: fixed
+    z-index: 999
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0, 0, 0, 0.6)
+
+.modal__content
+    display: flex
+    flex-direction: column
+    position: relative
+    background-color: #fefefe
+    left: 50%
+    transform: translateX(-50%)
+    border: 2px solid #888888
+    max-width: 600px
+    .close
+        font-size: 18px
+    .modal__content__header
+        border-bottom: 1px solid grey
+        margin: 20px 30px
+        padding: 20px 0px
+        img
+            display: flex
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            margin: 20px auto
+        p 
+            font-size: 18px
+            color: #096a9d
+            font-weight: 600
+            text-align: center
+        .modal__content__header__info
+            display: flex
+            justify-content: space-between
+            .tag
+                text-transform: uppercase
+                color: $my_grey
+                letter-spacing: 1px
+                span
+                    font-size: 13px
+                    letter-spacing: 1px
+                    color: darken(#ffffff, 80%)
+                    font-weight: 600
+                    margin-left: 10px
+                    text-transform: none
+                i
+                    margin-left: 10px
+                    color: #fa4040
+    .modal__content__switch
+        display: flex
+        justify-content: space-between
+        padding: 0px 40px
+        p
+            font-size: 33px
+            font-style: italic
+            font-family: 'Arima Madurai', cursive
+            letter-spacing: 3px
+        .fa-chevron-circle-right
+            color: #096a9d
+        .fa-chevron-circle-left
+            color: $my_grey
+    .modal__content__title
+        display: flex
+        justify-content: center
+        color: $my_grey
+        text-transform: uppercase
+        font-size: 13px
+    .modal__content__stats
+        display: flex
+        justify-content: center
+        div
+            font-size: 10px
+            background: lighten(#096a9d, 60%)
+            max-width: 100px
+            max-height: 100px
+            padding: 30px
+            margin: 10px 15px 30px
+            &:nth-child(1)
+                transform: rotate(55deg)
+                span
+                    transform: rotate(-55deg)
+            &:nth-child(2)
+                transform: rotate(-20deg)
+                span
+                    transform: rotate(20deg)
+            &:nth-child(3)
+                transform: rotate(-75deg)
+                span
+                    transform: rotate(75deg)
+            &:nth-child(4)
+                transform: rotate(30deg)
+                span
+                    transform: rotate(-30deg)
+            span
+                font-size: 14px
+                text-align: center
+                display: flex
+                justify-content: center
+    .modal__content__people
+        display: flex
+        justify-content: center
+        span    
+            width: 80px
+            height: 80px
+            margin: 20px
+            background: repeating-linear-gradient(45deg, #dddddd, #dddddd 2px, #ffffff 2px, #ffffff 5px)
+            img
+                border-radius: 50%
+                width: 60px
+                height: 60px
+                margin: 10px 10px 30px
+    .modal__content__people__name
+        display: flex
+        justify-content: center
+        p
+            margin: 0 35px 20px
+            text-align: center
+            color: #096a9d
+    .modal__content__footer
+        margin-top: 20px
+        max-width: 600px 
+        background: repeating-linear-gradient(45deg, #dddddd, #dddddd 2px, #ffffff 2px, #ffffff 5px)
+        position: relative
+        img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: -25px
+        .article__author
+            display: flex
+            justify-content: center
+            padding-top: 40px
+            p 
+                color: #096a9d
+                margin-right: 20px
+            span
+                color: $my_grey
+        .article__title
+            display: flex
+            justify-content: center
+            p 
+                color: #096a9d
+                font-size: 18px
+        .article__stats
+            display: flex
+            justify-content: space-between
+            padding: 10px 20px
+               
+
+
+
+.close
+    top: 0px
+    right: 10px
+    position: absolute
+    color: #1d1d1d
+    font-size: 28px
+    font-weight: bold
+    &:hover, &:focus
+    text-decoration: none
+    cursor: pointer

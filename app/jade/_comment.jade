@@ -15,7 +15,7 @@
 			span more activites
 			.response__left__dot
 		.response__cards(ng-repeat="response in item.response")
-			img(ng-src="{{response.doctor.image}}", alt="")
+			img(ng-src="{{response.doctor.image}}", alt="" ng-click="openModal(id)")
 			.response__card__footer
 				p {{response.type}} 
 			.response__card__dot

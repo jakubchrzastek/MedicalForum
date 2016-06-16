@@ -6,8 +6,12 @@ angular.module('medicalApp')
             restrict: 'E',
             replace: true,
             templateUrl: 'html/_menu.html',
+            scope: {
+                findOnPage: '=find'
+            },
             link: function($scope, $element, $attrs) {
                 $scope.type = $attrs.type;
+                //$scope.findOnPage = undefined;
                 $scope.goBack = function() {
                     window.history.back();
                 };
