@@ -12,12 +12,7 @@ angular.module('medicalApp', ['ui.router'])
             	url: '/question/:questionID',
             	templateUrl: 'html/singlequestion.html',
             	controller: 'singleQuestionCtrl'
-            })
-            .state('profil',{
-                url: '/profil',
-                templateUrl: 'html/_profil.html'
             });
-
         $urlRouterProvider.otherwise('/');
     });
 
