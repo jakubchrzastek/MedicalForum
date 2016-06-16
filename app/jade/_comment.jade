@@ -1,4 +1,4 @@
-.comment(ng-repeat="item in allQuestionData | limitTo: limit as results", ng-class="{'comment--first': $first}")
+.comment(ng-repeat="item in allQuestionData | filter: find | limitTo: limit as results", ng-class="{'comment--first': $first}")
 	.comment__header
 		img(ng-src="{{item.image}}", alt="")
 		.comment__header__block
