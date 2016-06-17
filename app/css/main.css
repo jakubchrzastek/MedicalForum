@@ -4037,7 +4037,7 @@ table.hover tr:nth-of-type(even):hover {
       .comment .response .response__cards:hover {
         cursor: pointer; }
       .comment .response .response__cards p {
-        font-size: 16px; }
+        font-size: 14px; }
       .comment .response .response__cards img {
         margin-top: 10px;
         width: 80px;
