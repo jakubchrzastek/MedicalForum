@@ -11,9 +11,10 @@ angular.module('medicalApp')
             },
             link: function($scope, $element, $attrs) {
                 $scope.type = $attrs.type;
-                //$scope.findOnPage = undefined;
+                
                 $scope.goBack = function() {
                     window.history.back();
+
                 };
 
             }

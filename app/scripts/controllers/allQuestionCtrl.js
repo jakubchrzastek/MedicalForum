@@ -19,7 +19,6 @@ angular.module('medicalApp')
             $('#myModal').toggleClass('modalShow');
         };
 
-
         var windowElement = angular.element($window);
 
         function onResize() {
@@ -47,4 +46,6 @@ angular.module('medicalApp')
             windowElement.off('resize', onResize);
         });
 
+        onResize();
+        
     }]);

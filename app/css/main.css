@@ -3971,10 +3971,6 @@ table.hover tr:nth-of-type(even):hover {
     text-align: center; }
     .comment .comment__switch:hover {
       cursor: pointer; }
-    @media (max-width: 550px) {
-      .comment .comment__switch {
-        left: -400px;
-        top: 360px; } }
   .comment .response {
     background: #ffffff;
     width: calc(100% - 100px);
@@ -3987,6 +3983,9 @@ table.hover tr:nth-of-type(even):hover {
     display: -ms-flexbox;
     display: flex;
     float: right; }
+    @media (max-width: 550px) {
+      .comment .response {
+        width: 100%; } }
     .comment .response .response__dialog {
       padding: 50px; }
     .comment .response .response__left {
@@ -3998,6 +3997,9 @@ table.hover tr:nth-of-type(even):hover {
       height: 200px;
       position: relative;
       padding: 0px 50px; }
+      @media (max-width: 550px) {
+        .comment .response .response__left {
+          margin: 10px; } }
       .comment .response .response__left p {
         margin-top: 30px;
         font-size: 18px; }
@@ -4034,10 +4036,19 @@ table.hover tr:nth-of-type(even):hover {
       height: 200px;
       position: relative;
       color: #9a9a9a; }
+      @media (max-width: 600px) {
+        .comment .response .response__cards {
+          background: #b3b3b3; } }
+      @media (max-width: 550px) {
+        .comment .response .response__cards {
+          margin: 10px; } }
       .comment .response .response__cards:hover {
         cursor: pointer; }
       .comment .response .response__cards p {
         font-size: 14px; }
+        @media (max-width: 600px) {
+          .comment .response .response__cards p {
+            color: #000000; } }
       .comment .response .response__cards img {
         margin-top: 10px;
         width: 80px;
@@ -4052,6 +4063,9 @@ table.hover tr:nth-of-type(even):hover {
         text-align: center;
         display: inline-block;
         width: 90%; }
+        @media (max-width: 600px) {
+          .comment .response .response__cards .response__card__footer {
+            border-top: 1px solid #000000; } }
       .comment .response .response__cards .response__card__dot {
         position: absolute;
         display: block;
@@ -4096,6 +4110,9 @@ table.hover tr:nth-of-type(even):hover {
     color: #9a9a9a;
     text-align: center;
     display: inline-block; }
+    @media (max-width: 550px) {
+      .comment .comment__footer {
+        display: none; } }
 
 .info {
   margin-top: 60px;
@@ -4307,6 +4324,18 @@ table.hover tr:nth-of-type(even):hover {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 800px) {
+        .modal__content .modal__content__header .modal__content__header__info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
       .modal__content .modal__content__header .modal__content__header__info .tag {
         text-transform: uppercase;
         color: gray;

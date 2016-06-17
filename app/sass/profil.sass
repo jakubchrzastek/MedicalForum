@@ -8,7 +8,6 @@
     height: 100vh
     overflow: auto
     background-color: rgba(0, 0, 0, 0.6)
-
     &.modalShow
         display: block
 
@@ -42,6 +41,11 @@
         .modal__content__header__info
             display: flex
             justify-content: space-between
+            @media(max-width: 800px)
+                display: flex
+                flex-direction: column
+                align-items: center
+
             .tag
                 text-transform: uppercase
                 color: $my_grey
