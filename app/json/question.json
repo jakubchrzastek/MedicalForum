@@ -4,6 +4,7 @@
         "image": "image/doctor2.jpg",
         "title": "Will insuline make my patient weight?",
         "author": "Eva",
+        "authorId": "2",
         "stats": {
             "related_discussion": "1",
             "peers_involved": "6",
@@ -13,20 +14,26 @@
         "response": [{
             "type": "COMMENTED",
             "doctor": {
-                "id": 1,
-                "image": "image/doctor1.jpg"
-            }
-        }, {
-            "type": "COMMENTED",
-            "doctor": {
                 "id": 4,
                 "image": "image/doctor4.jpg"
             }
         }, {
             "type": "COMMENTED",
             "doctor": {
+                "id": 1,
+                "image": "image/doctor1.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
                 "id": 3,
                 "image": "image/doctor3.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 5,
+                "image": "image/doctor5.jpg"
             }
         }],
         "comments": [{
@@ -43,6 +50,7 @@
         "image": "image/doctor3.jpg",
         "title": "Vegan diet in diabetes treatment?",
         "author": "Joseph",
+        "authorId": "3",
         "stats": {
             "related_discussion": "2",
             "peers_involved": "9",
@@ -74,6 +82,7 @@
         "image": "image/doctor4.jpg",
         "title": "Vegan diet to stop diabeten progress",
         "author": "Andrew",
+        "authorId": "4",
         "stats": {
             "related_discussion": "5",
             "peers_involved": "4",
@@ -83,8 +92,14 @@
         "response": [{
             "type": "COMMENTED",
             "doctor": {
-                "id": 1,
+                "id": 3,
                 "image": "image/doctor3.jpg"
+            }
+        }, {
+            "type": "COMMENTED",
+            "doctor": {
+                "id": 2,
+                "image": "image/doctor2.jpg"
             }
         }]
     }]

@@ -6,9 +6,9 @@
         "member": "5month",
         "last_seen": "yesterday",
         "stats": {
-            "peers": "49",
+            "peers": "19",
             "discussions": "29",
-            "findings": "19",
+            "findings": "15",
             "questions" : "10"
         },
         "join": [{

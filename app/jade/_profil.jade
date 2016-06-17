@@ -1,6 +1,6 @@
 #myModal.modal
     .modal__content(ng-repeat="item in doctorData")
-        span.close x
+        span.close(ng-click="closeModal()") x
         .modal__content__header
             img(ng-src="{{item.image}}", alt="")
             p {{item.name}}
@@ -10,7 +10,6 @@
                 .tag last seen 
                     span {{item.last_seen}}
                 .tag activity level
-                    i.fa.fa-star(aria-hidden='true')
                     i.fa.fa-star(aria-hidden='true')
         .modal__content__switch
             i.fa.fa-chevron-circle-left.fa-2x
@@ -57,7 +56,7 @@
             .article__title
                 p {{item.winner.title}}
             .article__stats
-                p 6 peers involved
-                p 6 peers involved
-                p 6 peers involved
-                p 6 peers involved
+                p {{item.stats.peers}} peers involved
+                p {{item.stats.discussions}} conversations
+                p {{item.stats.findings}} findings
+                p {{item.stats.questions}} questions

@@ -9,6 +9,9 @@
     overflow: auto
     background-color: rgba(0, 0, 0, 0.6)
 
+    &.modalShow
+        display: block
+
 .modal__content
     display: flex
     flex-direction: column
@@ -20,6 +23,7 @@
     max-width: 600px
     .close
         font-size: 18px
+        color: $my_grey
     .modal__content__header
         border-bottom: 1px solid grey
         margin: 20px 30px
@@ -75,10 +79,9 @@
         display: flex
         justify-content: center
         div
-            font-size: 10px
             background: lighten(#096a9d, 60%)
-            max-width: 100px
-            max-height: 100px
+            max-width: 90px
+            max-height: 90px
             padding: 30px
             margin: 10px 15px 30px
             &:nth-child(1)

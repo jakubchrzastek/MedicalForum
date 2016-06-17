@@ -1,5 +1,29 @@
 menu(type="allQuestion", find="find")
-comment
-profil(userid="user")
+.comment(ng-repeat="item in allQuestionData | filter: find | limitTo: limit as results", ng-class="{'comment--first': $first}")
+	.comment__header
+		img(ng-src="{{item.image}}", alt="big avatar" ng-click="openModal(item.authorId)")
+		.comment__header__block
+			.comment__header__who
+				p(ng-click="openModal(item.authorId)") {{item.author}} 
+				span  IS ASKING:
+			.comment__header__title
+				p(ui-sref="singlequestion({ questionID: item.id })") {{item.title}}
+	.comment__footer
+		p asked
+	.response
+		.response__left
+			p {{moreActivites}}
+			span more activites
+			.response__left__dot
+		.response__cards(ng-repeat="response in item.response | limitTo: limitShow" ng-click="openModal(response.doctor.id)")
+			img(ng-src="{{response.doctor.image}}", alt="small avatar")
+			.response__card__footer
+				p {{response.type}} 
+			.response__card__dot
+		.response__stats
+			span {{item.stats.related_discussion}} related discusion
+			span {{item.stats.peers_involved}} peers involved
+			span {{item.stats.conversations}} conversations
+profil(userid="modalUser")
 .row.medium-12.column.text-center.loadmore
 	span(ng-hide='results.length===allQuestionData.length || results.length===0', ng-click='limit=limit+1') Load more question

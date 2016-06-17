@@ -4,12 +4,12 @@
         "image": "image/doctor5.jpg",
         "name": "Hose",
         "member": "5month",
-        "last_seen": "yesterday",
+        "last_seen": "Wednesday",
         "stats": {
-            "peers": "49",
-            "discussions": "29",
-            "findings": "19",
-            "questions" : "10"
+            "peers": "7",
+            "discussions": "2",
+            "findings": "11",
+            "questions" : "6"
         },
         "join": [{
             "name": "Eva",

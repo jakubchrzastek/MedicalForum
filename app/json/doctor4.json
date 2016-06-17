@@ -4,12 +4,12 @@
         "image": "image/doctor4.jpg",
         "name": "Andrew",
         "member": "5month",
-        "last_seen": "yesterday",
+        "last_seen": "last week",
         "stats": {
-            "peers": "49",
-            "discussions": "29",
-            "findings": "19",
-            "questions" : "10"
+            "peers": "5",
+            "discussions": "9",
+            "findings": "3",
+            "questions" : "4"
         },
         "join": [{
             "name": "Mike",

@@ -3917,9 +3917,6 @@ table.hover tr:nth-of-type(even):hover {
           flex-direction: column;
   position: relative;
   margin-bottom: 10px; }
-  @media (max-width: 1000px) {
-    .comment {
-      margin: 10px 10px; } }
   .comment .comment__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3933,12 +3930,16 @@ table.hover tr:nth-of-type(even):hover {
       border-radius: 50%;
       display: inline-block;
       margin: 30px; }
+      .comment .comment__header img:hover {
+        cursor: pointer; }
     .comment .comment__header .comment__header__who {
       -ms-flex-item-align: center;
           align-self: center; }
       .comment .comment__header .comment__header__who p {
         display: inline-block;
         color: #096a9d; }
+        .comment .comment__header .comment__header__who p:hover {
+          cursor: pointer; }
       .comment .comment__header .comment__header__who span {
         color: #fefefe;
         text-transform: uppercase; }
@@ -3970,11 +3971,10 @@ table.hover tr:nth-of-type(even):hover {
     text-align: center; }
     .comment .comment__switch:hover {
       cursor: pointer; }
-    @media (max-width: 460px) {
+    @media (max-width: 550px) {
       .comment .comment__switch {
-        left: -70%;
-        top: 90%;
-        bottom: -15px; } }
+        left: -400px;
+        top: 360px; } }
   .comment .response {
     background: #ffffff;
     width: calc(100% - 100px);
@@ -3991,12 +3991,13 @@ table.hover tr:nth-of-type(even):hover {
       padding: 50px; }
     .comment .response .response__left {
       margin: 50px 0px 0px 20px;
-      min-width: 120px;
+      min-width: 100px;
       background: #ffffff;
       text-align: center;
       padding: 10px;
       height: 200px;
-      position: relative; }
+      position: relative;
+      padding: 0px 50px; }
       .comment .response .response__left p {
         margin-top: 30px;
         font-size: 18px; }
@@ -4021,18 +4022,20 @@ table.hover tr:nth-of-type(even):hover {
                 transform: translateX(-50%); }
       @media (max-width: 600px) {
         .comment .response .response__left {
-          background: gray; }
+          background: #b3b3b3; }
           .comment .response .response__left span {
             color: #000000; } }
     .comment .response .response__cards {
       margin: 50px 20px 0 20px;
-      min-width: 120px;
+      min-width: 8px;
       background: #eeeeee;
       text-align: center;
       padding: 10px 15px;
       height: 200px;
       position: relative;
       color: #9a9a9a; }
+      .comment .response .response__cards:hover {
+        cursor: pointer; }
       .comment .response .response__cards p {
         font-size: 16px; }
       .comment .response .response__cards img {
@@ -4233,13 +4236,13 @@ table.hover tr:nth-of-type(even):hover {
   margin-top: 130px; }
   @media (max-width: 900px) {
     .comment--first {
-      margin-top: 170px; } }
+      margin-top: 300px; } }
 
 .comment--fix {
   margin-top: 70px; }
   @media (max-width: 760px) {
     .comment--fix {
-      margin-top: 90px; } }
+      margin: 100px 5px 0px; } }
 
 .loadmore {
   font-weight: 600;
@@ -4258,6 +4261,8 @@ table.hover tr:nth-of-type(even):hover {
   height: 100vh;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6); }
+  .modal.modalShow {
+    display: block; }
 
 .modal__content {
   display: -webkit-box;
@@ -4276,7 +4281,8 @@ table.hover tr:nth-of-type(even):hover {
   border: 2px solid #888888;
   max-width: 600px; }
   .modal__content .close {
-    font-size: 18px; }
+    font-size: 18px;
+    color: gray; }
   .modal__content .modal__content__header {
     border-bottom: 1px solid grey;
     margin: 20px 30px;
@@ -4350,10 +4356,9 @@ table.hover tr:nth-of-type(even):hover {
         -ms-flex-pack: center;
             justify-content: center; }
     .modal__content .modal__content__stats div {
-      font-size: 10px;
       background: #dbf1fd;
-      max-width: 100px;
-      max-height: 100px;
+      max-width: 90px;
+      max-height: 90px;
       padding: 30px;
       margin: 10px 15px 30px; }
       .modal__content .modal__content__stats div:nth-child(1) {

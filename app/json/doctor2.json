@@ -4,11 +4,11 @@
         "image": "image/doctor2.jpg",
         "name": "Eva",
         "member": "5month",
-        "last_seen": "yesterday",
+        "last_seen": "Monday",
         "stats": {
-            "peers": "49",
-            "discussions": "29",
-            "findings": "19",
+            "peers": "9",
+            "discussions": "2",
+            "findings": "7",
             "questions" : "10"
         },
         "join": [{
